@@ -12,6 +12,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 5px;
     margin: 0;
+      z-index: 1;
   }
 
   .content-wrap {
@@ -24,6 +25,7 @@
     margin: 0;
     font-size: 12px;
     -webkit-transform: scale(0.9);
+      z-index: 1;
   }
   .content-wrap2 {
     background: snow;
@@ -35,6 +37,7 @@
     margin: 0;
     font-size: 12px;
     -webkit-transform: scale(0.9);
+      z-index: 1;
   }
   .content-wrap3 {
     background: snow;
@@ -46,18 +49,23 @@
     margin: 0;
     font-size: 12px;
     -webkit-transform: scale(0.9);
+      z-index: 1;
   }
   h1 {
     position: absolute;
     top: 640px;
     left: 830px;
     font-size: 25px;
+      z-index: 1;
   }
   .rectangle {
-    width: 560px;
-    height: 800px;
-    background: snow;
-    margin: 0 auto;
+      position:absolute;
+      left: 433px;
+      width: 560px;
+      height: 800px;
+      background-color: snow;
+      margin: 0 auto;
+      z-index: 1;
   }
   .circle-small {
     width: 50px;
@@ -67,7 +75,15 @@
      position: absolute;
      top: 480px;
      left: 770px;
+      animation: strench1 10s ease-out 1s 3;
+      z-index: 2;
   }
+    @keyframes strench1 {
+          0%{transform: scale(1)}
+          5%{transform: scale(1.2)}
+          18%{transform: scale(0)}
+          100%{transform: scale(0);}
+      }
   .circle-medium-small {
     width: 130px;
      height: 130px;
@@ -76,7 +92,17 @@
      position: absolute;
      top: 510px;
      left: 670px;
+      animation: strench2 10s ease-out 1s 3;
+      z-index: 2;
   }
+    @keyframes strench2 {
+        0%{transform: scale(1);}
+        5%{transform: scale(1)}
+        15%{transform: scale(1.6);}
+        30%{transform: scale(0)}
+        70%{transform: scale(0)}
+        100%{transform: scale(0);}
+    }
   .circle-medium-big {
     width: 300px;
      height: 300px;
@@ -85,7 +111,16 @@
      position: absolute;
      top: 250px;
      left: 450px;
+      animation: strench3 10s ease-out 1s 3;
+      z-index: 2;
   }
+        @keyframes strench3 {
+            0%{transform: scale(1);}
+            15%{transform: scale(1)}
+            30%{transform: scale(1.7)}
+            50%{transform: scale(0);}
+            100%{transform: scale(0);}
+        }
   .circle-big {
     width: 800px;
      height: 800px;
@@ -94,5 +129,12 @@
      position: absolute;
      top: -400px;
      left: 600px;
+      animation: strench4 10s ease-out 1s 3;
+      z-index: 2;
   }
+    @keyframes strench4 {
+    0%{transform: scale(1);}
+    30%{transform: scale(1)}
+    100%{transform: scale(2.5);}
+}
 </style>
