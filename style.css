@@ -92,7 +92,7 @@
      position: absolute;
      top: 510px;
      left: 670px;
-      animation: strench2 10s ease-out 1s 3;
+      animation: strench2 10s ease-out 1s 100;
       z-index: 2;
   }
     @keyframes strench2 {
@@ -138,3 +138,4 @@
     100%{transform: scale(2.5);}
 }
 </style>
+
